@@ -21,11 +21,30 @@ Welcome to the Data Visualization project built with Django. This project aims t
 To set up the project, follow these steps:
 
 1. Clone the repository.
-2. Install the required dependencies using the following command:
+2. Navigate to the project directory:
+    ```bash
+    cd adidas-sales-visualization
+    ```
+3. Create virtual environment:
+    ```bash
+    python -m venv venv
+    ```
+4. Activate the environment:
+    ```bash
+    .\venv\Scripts\activate
+    ```
+    ```bash
+    source venv/bin/activate
+    ```
+5. Install the required dependencies using the following command:
     ```bash
     pip install -r requirements.txt
     ```
-3. Run the Django development server.
+6. Run the Django development server:
+    ```bash
+    python manage.py runserver
+    ```
+
 
 ## Project Description
 1. **Understand Your Data**
