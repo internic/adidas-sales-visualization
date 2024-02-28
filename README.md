@@ -49,32 +49,33 @@ To set up the project, follow these steps:
     python manage.py runserver
     ```
 
-
 ## Project Description
-1. **Understand Your Data**
-    - **First Step:** Open the `data_sales.xlsx` dataset and familiarize yourself with its structure and the variables mentioned in the guidelines.
-    - **Preparing Your Data**
 
-2. **Choosing Your Visualizations**
-    - **Retailer Analysis:** Use bar charts to compare the total sales and operating profit by retailer.
-    - **Trends:** Utilize line graphs to display trends over time for variables such as `Total Sales` and `Units Sold`.
-    - **Geographical Insights:** Employ maps or choropleth maps to visualize sales by region or state.
-    - **Product Analysis:** Pie charts or bar charts can be useful to show the distribution of sales among different products.
-    - **Price Analysis:** Scatter plots might help in understanding the relationship between `Price per Unit` and `Units Sold` or `Total Sales`.
-    - **Sales Method Analysis:** Use pie charts or bar charts to visualize the distribution of sales by different sales methods.
-    - **Additional Insights:** For other variables, use appropriate charts accordingly.
+### 1. Understand Your Data
+   - **First Step:** Open the `data_sales.xlsx` dataset to gain insights into its structure and variables.
+   - **Preparing Your Data:** Describe any data preprocessing steps undertaken for better analysis.
 
-3. **Implementing Design Elements**
-    - **Consistency:** Maintain a consistent color scheme and style across all your visualizations.
-    - **Readability:** Ensure your charts are easily readable, with clear labels, legends, and titles.
-    - **Highlight Key Insights:** Use annotations, highlighting, or other visual cues to draw attention to the most important findings.
+### 2. Choosing Your Visualizations
+   - **Retailer Analysis:** Utilized bar charts to compare total sales and operating profit by retailer.
+   - **Trends:** Implemented line graphs to visualize trends over time for variables like `Total Sales` and `Units Sold`.
+   - **Geographical Insights:** Employed maps and choropleth maps to visualize sales by region or state.
+   - **Product Analysis:** Utilized pie charts and bar charts to display the distribution of sales among different products.
+   - **Price Analysis:** Created scatter plots to understand the relationship between `Price per Unit` and `Units Sold` or `Total Sales`.
+   - **Sales Method Analysis:** Visualized the distribution of sales by different sales methods using pie charts or bar charts.
+   - **Additional Insights:** Utilized various appropriate charts for additional variables.
 
-4. **Creating the Visualizations**
-    - **Software and Tools:** Depending on your preference, use software such as Excel, Python with libraries (e.g., matplotlib, seaborn, pandas), or R/RStudio for creating your visualizations.
+### 3. Implementing Design Elements
+   - **Consistency:** Maintained a consistent color scheme and style across all visualizations.
+   - **Readability:** Ensured charts are easily readable with clear labels, legends, and titles.
+   - **Highlight Key Insights:** Used annotations, highlighting, or visual cues to emphasize important findings.
 
-5. **Analyzing and Reporting**
-    - **Analysis:** For each visualization, provide a brief analysis of what the data shows.
-    - **Insights:** Summarize the key insights from your analysis and consider the implications on Adidas's sales strategy and operations.
+### 4. Creating the Visualizations
+   - **Software and Tools:** Depending on preferences, used tools like Excel, Python with libraries (e.g., matplotlib, seaborn, pandas), or R/RStudio for visualization.
+
+### 5. Analyzing and Reporting
+   - **Analysis:** Provided brief analyses for each visualization, identifying trends, outliers, or interesting patterns.
+   - **Insights:** Summarized key insights and considered implications on Adidas's sales strategy and operations.
+
 
 ## Requirements
 - Django==5.0.2
