@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Adidas Sales Dashboard</title>
+
+    <!-- vendor css -->
+    <link href="{% static 'icons/fa/css/all.min.css' %}" rel="stylesheet">
+    <link href="{% static 'icons/remix/remixicon.css' %}" rel="stylesheet">
+    <link href="{% static 'plugins/jqvmap/jqvmap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/apexcharts.css' %}" rel="stylesheet">
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="{% static 'css/dashforge.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dashforge.dashboard.css' %}">
+    <link rel="stylesheet" href="{% static 'css/skin.cool.css' %}">
+
+    <!-- Scripts -->
+    <script src="{% static 'plugins/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'plugins/bootstrap/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'icons/feather/feather.min.js' %}"></script>
+    <script src="{% static 'js/perfect-scrollbar.min.js' %}"></script>
+    <script src="{% static 'js/jquery.flot.js' %}"></script>
+    <script src="{% static 'js/jquery.flot.stack.js' %}"></script>
+    <script src="{% static 'js/jquery.flot.resize.js' %}"></script>
+    <script src="{% static 'js/Chart.bundle.min.js' %}"></script>
+    <script src="{% static 'js/apexcharts.min.js' %}"></script>
+    <script src="{% static 'plugins/jqvmap/jquery.vmap.min.js' %}"></script>
+    <script src="{% static 'plugins/jqvmap/jquery.vmap.usa.js' %}"></script>
+
+    <script src="{% static 'js/dashforge.js' %}"></script>
+    <script src="{% static 'js/dashforge.aside.js' %}"></script>
+    <script src="{% static 'js/dashforge.sampledata.js' %}"></script>
+
+    <script src="{% static 'js/dashboard-one.js' %}"></script>
+</head>
+<body>
+    {% block content %} 
+    
+    {% endblock content %}
+    
+</body>
+</html>
