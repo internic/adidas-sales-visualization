@@ -69,10 +69,7 @@ To set up the project, follow these steps:
    - **Readability:** Ensured charts are easily readable with clear labels, legends, and titles.
    - **Highlight Key Insights:** Used annotations, highlighting, or visual cues to emphasize important findings.
 
-### 4. Creating the Visualizations
-   - **Software and Tools:** Depending on preferences, used tools like Excel, Python with libraries (e.g., matplotlib, seaborn, pandas), or R/RStudio for visualization.
-
-### 5. Analyzing and Reporting
+### 4. Analyzing and Reporting
    - **Analysis:** Provided brief analyses for each visualization, identifying trends, outliers, or interesting patterns.
    - **Insights:** Summarized key insights and considered implications on Adidas's sales strategy and operations.
 
@@ -83,18 +80,6 @@ To set up the project, follow these steps:
 - pandas==2.2.1
 - python-dotenv==1.0.1
 - sqlparse==0.4.4
-
-## Visualizations
-Include screenshots or examples of some key visualizations to give users a preview of the insights your project can provide.
-
-## Design Elements
-Expand on the design elements section by providing more details on the color scheme, fonts, and any other design considerations you've implemented.
-
-## Creating Visualizations
-Include step-by-step instructions or code snippets on how to create visualizations using the specified software and tools.
-
-## Analyzing and Reporting
-Provide a more detailed guide on how to analyze the visualizations, and offer insights on how the findings can be applied to Adidas's sales strategy and operations.
 
 ## Screenshots
 Insert screenshots here to showcase the visualizations from your project.
