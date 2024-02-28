@@ -48,7 +48,7 @@ To set up the project, follow these steps:
 ## Project Description
 
 ### 1. Understand Your Data
-   - **First Step:** Open the `data_sales.xlsx` dataset to gain insights into its structure and variables.
+   - **First Step:** Open the `dataset/data_sales.xlsx` dataset to gain insights into its structure and variables.
    - **Preparing Your Data:** Describe any data preprocessing steps undertaken for better analysis.
 
 ### 2. Choosing Your Visualizations
@@ -88,6 +88,3 @@ If you'd like to contribute to this project, please follow our [Contributing Gui
 
 ## License
 This project is licensed under the [MIT License](LICENSE.md) - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Acknowledgments
-Give credit to any resources, libraries, or individuals you'd like to acknowledge for their contributions or inspiration.
