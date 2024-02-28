@@ -8,7 +8,6 @@
 - [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [License](#license)
-- [Acknowledgments](#acknowledgments)
 
 ## Introduction
 Welcome to the Data Visualization project built with Django. This project aims to provide insights into the `data_sales.xlsx` dataset using various visualizations implemented in a Django dashboard.
