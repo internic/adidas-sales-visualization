@@ -83,6 +83,9 @@ To set up the project, follow these steps:
 
 ## Screenshots
 ![](static/images/1.png)
+![](static/images/2.png)
+![](static/images/3.png)
+![](static/images/4.png)
 
 ## Contributing
 If you'd like to contribute to this project, please follow our [Contributing Guidelines](CONTRIBUTING.md).
