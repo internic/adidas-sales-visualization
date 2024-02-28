@@ -82,7 +82,7 @@ To set up the project, follow these steps:
 - sqlparse==0.4.4
 
 ## Screenshots
-Insert screenshots here to showcase the visualizations from your project.
+![](static/images/1.png)
 
 ## Contributing
 If you'd like to contribute to this project, please follow our [Contributing Guidelines](CONTRIBUTING.md).
