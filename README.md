@@ -22,17 +22,21 @@ To set up the project, follow these steps:
 
 1. Clone the repository.
 2. Navigate to the project directory:
+
     ```bash
     cd adidas-sales-visualization
     ```
 3. Create virtual environment:
+
     ```bash
     python -m venv venv
     ```
 4. Activate the environment:
+    Windows:
     ```bash
     .\venv\Scripts\activate
     ```
+    macOS/linux
     ```bash
     source venv/bin/activate
     ```
