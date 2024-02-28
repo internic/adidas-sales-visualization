@@ -3,3 +3,5 @@
 .venv
 .venv/
 .xlsx
+/venv
+venv.
