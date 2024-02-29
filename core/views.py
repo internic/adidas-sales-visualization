@@ -5,6 +5,8 @@ from .models import SalesData
 import json
 from django.http import JsonResponse
 from itertools import islice
+from django.db.models.functions import TruncMonth
+import datetime
 
 
 
@@ -128,4 +130,47 @@ def sales_by_product(request):
     return JsonResponse({
         'labels': products,
         'data': sales
+    })
+    
+    
+
+
+def sales_by_state(request):
+    sales_data = SalesData.objects.values('state').annotate(total_sales=Sum('total_sales')).order_by('state')
+    
+    states = [data['state'] for data in sales_data]
+    sales = [data['total_sales'] for data in sales_data]
+    
+    return JsonResponse({
+        'states': states,
+        'sales': sales
+    })
+    
+    
+    
+def sales_trends(request):
+    # Aggregate total sales by month
+    total_sales_by_month = SalesData.objects.annotate(month=TruncMonth('invoice_date')).values('month').annotate(total_sales=Sum('total_sales')).order_by('month')
+    
+    # Aggregate operating profit by month (instead of units sold)
+    operating_profit_by_month = SalesData.objects.annotate(month=TruncMonth('invoice_date')).values('month').annotate(operating_profit=Sum('operating_profit')).order_by('month')
+
+    # Convert dates to timestamps and prepare data for Flot chart
+    total_sales_data = [
+        [datetime.datetime.combine(sale['month'], datetime.time()).timestamp() * 1000, sale['total_sales']] 
+        for sale in total_sales_by_month
+    ]
+    operating_profit_data = [
+        [datetime.datetime.combine(sale['month'], datetime.time()).timestamp() * 1000, sale['operating_profit']] 
+        for sale in operating_profit_by_month
+    ]
+    
+    # Convert dates to timestamps for Flot chart
+    total_sales_data = [[datetime.datetime.combine(sale['month'], datetime.time()).timestamp() * 1000, sale['total_sales']] for sale in total_sales_by_month]
+    ticks = [[datetime.datetime.combine(sale['month'], datetime.time()).timestamp() * 1000, sale['month'].strftime('%b %Y')] for sale in total_sales_by_month]
+
+    return JsonResponse({
+        'total_sales_data': total_sales_data,
+        'operating_profit_data': operating_profit_data,
+        'ticks': ticks
     })

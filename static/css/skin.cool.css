@@ -58,3 +58,7 @@ body {
   padding-top: 13.5px !important;
   padding-bottom: 13.5px !important;
 }
+
+.card {
+  border-radius: 15px !important;
+}
